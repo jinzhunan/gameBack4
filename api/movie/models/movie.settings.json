@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "name": "movie",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "videos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "comments": {
+      "collection": "comment",
+      "via": "movie"
+    },
+    "movieType": {
+      "type": "enumeration",
+      "enum": [
+        "movie",
+        "drama",
+        "anime",
+        "game"
+      ]
+    },
+    "movie": {
+      "type": "enumeration",
+      "enum": [
+        "comedy",
+        "romantic",
+        "action",
+        "fantasy"
+      ]
+    },
+    "drama": {
+      "type": "enumeration",
+      "enum": [
+        "romantic",
+        "history",
+        "comedy",
+        "family"
+      ]
+    },
+    "anime": {
+      "type": "enumeration",
+      "enum": [
+        "fantasy",
+        "action",
+        "romantic",
+        "school"
+      ]
+    },
+    "game": {
+      "type": "enumeration",
+      "enum": [
+        "whatever"
+      ]
+    },
+    "mainPhoto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

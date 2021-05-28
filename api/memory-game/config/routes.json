@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/memory-games",
+      "handler": "memory-game.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/memory-games/count",
+      "handler": "memory-game.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/memory-games/:id",
+      "handler": "memory-game.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/memory-games",
+      "handler": "memory-game.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/memory-games/:id",
+      "handler": "memory-game.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/memory-games/:id",
+      "handler": "memory-game.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

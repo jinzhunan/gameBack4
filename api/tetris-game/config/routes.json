@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tetris-games",
+      "handler": "tetris-game.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tetris-games/count",
+      "handler": "tetris-game.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tetris-games/:id",
+      "handler": "tetris-game.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tetris-games",
+      "handler": "tetris-game.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tetris-games/:id",
+      "handler": "tetris-game.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tetris-games/:id",
+      "handler": "tetris-game.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

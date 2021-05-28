@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "movie_types",
+  "info": {
+    "name": "movieType"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "movies": {
+      "collection": "movie"
+    },
+    "movieType0": {
+      "type": "enumeration",
+      "enum": [
+        "movie",
+        "drama",
+        "anime",
+        "game"
+      ]
+    }
+  }
+}

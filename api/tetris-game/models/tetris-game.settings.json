@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tetris_games",
+  "info": {
+    "name": "TetrisGame",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "score": {
+      "type": "biginteger"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}

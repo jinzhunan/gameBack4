@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/movie-type",
+      "handler": "movie-type.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/movie-type",
+      "handler": "movie-type.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/movie-type",
+      "handler": "movie-type.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
