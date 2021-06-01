@@ -37,7 +37,8 @@
         "movie",
         "drama",
         "anime",
-        "game"
+        "music",
+        "life"
       ]
     },
     "movie": {
@@ -67,10 +68,15 @@
         "school"
       ]
     },
-    "game": {
+    "life": {
       "type": "enumeration",
       "enum": [
-        "whatever"
+        "guitar",
+        "puzzle",
+        "fishing",
+        "skateboard",
+        "skiing",
+        "other"
       ]
     },
     "mainPhoto": {
@@ -84,6 +90,14 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "music": {
+      "type": "enumeration",
+      "enum": [
+        "concert",
+        "animeAMV",
+        "other"
+      ]
     }
   }
 }
