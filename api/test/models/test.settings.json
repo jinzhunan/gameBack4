@@ -28,7 +28,8 @@
       "type": "string"
     },
     "day_count": {
-      "type": "string"
+      "type": "string",
+      "default": "1"
     }
   }
 }
