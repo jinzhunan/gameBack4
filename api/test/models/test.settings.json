@@ -26,6 +26,9 @@
     },
     "visitor_longitude": {
       "type": "string"
+    },
+    "day_count": {
+      "type": "string"
     }
   }
 }
