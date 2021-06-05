@@ -15,7 +15,8 @@ module.exports = {
    * Simple example.
    * Every monday at 1am.
    */
-  '* * 6 * * *': async () => {
+  //  '* * 6 * * *' every morning 6 am
+  '* * 23 * * *': async () => {
     console.log('consle every 5 min')
     const d = new Date()
     // const year = d.getFullYear()
