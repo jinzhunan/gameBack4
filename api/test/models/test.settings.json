@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tests",
   "info": {
-    "name": "test"
+    "name": "test",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "visitor_country": {
+      "type": "string"
+    },
+    "visitor_city": {
+      "type": "string"
+    },
+    "visitor_ip": {
+      "type": "string"
+    },
+    "visitor_latitude": {
+      "type": "string"
+    },
+    "visitor_longitude": {
       "type": "string"
     }
   }
