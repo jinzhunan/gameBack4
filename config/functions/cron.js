@@ -16,16 +16,9 @@ module.exports = {
    * Every monday at 1am.
    */
   //  '59 59 23 * * *' every day 23:59:59
-  '32 */1 * * *': async () => {
+  '45 23 * * *': async () => {
     console.log('consle every 5 min')
     const d = new Date()
-    // const year = d.getFullYear()
-    // const month = d.getMonth() + 1
-    // const day = d.getDate()
-
-    // console.log(`${year}/${month}/${day}`)
-
-    // strapi.config.functions.docker();
 
     const daily = await strapi.api.test.services.test.find(
       // {createdAt: new Date()}
@@ -34,9 +27,7 @@ module.exports = {
         const isYear = item.createdAt.getFullYear() === d.getFullYear()
         const isMonth = item.createdAt.getMonth() + 1 === d.getMonth() + 1
         const isDay = item.createdAt.getDate() === d.getDate()
-        // console.log(isYear)
-        // console.log(isMonth)
-        // console.log(isDay)
+
         if(isYear && isMonth && isDay){
           return item
         }
