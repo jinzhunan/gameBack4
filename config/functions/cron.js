@@ -16,7 +16,7 @@ module.exports = {
    * Every monday at 1am.
    */
   //  '59 59 23 * * *' every day 23:59:59
-  '45 23 * * *': async () => {
+  '15 6 * * *': async () => {
     console.log('consle every 5 min')
     const d = new Date()
 
