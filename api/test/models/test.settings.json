@@ -33,6 +33,9 @@
     },
     "visitor_postal": {
       "type": "string"
+    },
+    "date": {
+      "type": "date"
     }
   }
 }
