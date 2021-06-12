@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/testyears",
+      "handler": "testyear.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testyears/count",
+      "handler": "testyear.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/testyears/:id",
+      "handler": "testyear.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/testyears",
+      "handler": "testyear.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/testyears/:id",
+      "handler": "testyear.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/testyears/:id",
+      "handler": "testyear.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

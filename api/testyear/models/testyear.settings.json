@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testyears",
+  "info": {
+    "name": "testyear"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "json"
+    }
+  }
+}
