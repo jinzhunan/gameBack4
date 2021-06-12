@@ -58,11 +58,11 @@ module.exports = {
         count: ${item.day_count}<br/>
         date: ${currentYear}-${currentMon}-${currentDay}<br/>
       `)).toString()
-      console.log(contect)
-    // await strapi.plugins['email'].services.email.send({
-    //   to:"nanjinzhu666@gmail.com",
-    //   subject: 'daily visitors',
-    //   html: contect
-    // })
+
+      await strapi.plugins['email'].services.email.send({
+      to:"nanjinzhu666@gmail.com",
+      subject: 'daily visitors',
+      html: contect
+    })
   }
 };
