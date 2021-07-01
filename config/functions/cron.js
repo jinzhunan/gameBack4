@@ -16,7 +16,7 @@ module.exports = {
    * Every monday at 1am.
    */
   //  '59 59 23 * * *' every day 23:59:59
-  ' * * 8 * * *': async () => {
+  ' 10 10 8 * * *': async () => {
     const d = new Date()
 
     const daily = await strapi.api.test.services.test.find(
